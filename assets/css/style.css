@@ -1179,7 +1179,7 @@ footer .footer__social a:hover {
   .project__container {
     background-color: var(--first-color-second);
     border-radius: 1rem;
-    padding: 3rem 2.5rem 0;
+    padding: 3rem 2.5rem 5px;
     grid-template-columns: 1fr max-content;
     column-gap: 3rem;
   }
