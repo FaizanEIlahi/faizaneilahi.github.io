@@ -685,7 +685,8 @@ img {
 }
 
 .portfolio__img {
-  width: 265px;
+  width: 100%;
+  height: 150px;
   border-radius: .5rem;
   justify-self: center;
 }
@@ -1160,7 +1161,7 @@ footer .footer__social a:hover {
   }
 
   .portfolio__img {
-    width: 320px;
+    width: 150px;
   }
 
   .portfolio__content {
@@ -1339,6 +1340,7 @@ footer .footer__social a:hover {
   flex-basis: calc(25% - 20px);
   margin: 10px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .image-card img {
