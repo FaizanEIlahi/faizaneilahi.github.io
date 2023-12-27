@@ -293,6 +293,7 @@ img {
   display: grid;
   grid-template-columns: max-content;
   row-gap: 1rem;
+  display: none;
 }
 
 .home__social-icon {
@@ -1167,7 +1168,8 @@ footer .footer__social a:hover {
   }
 
   .portfolio__img {
-    width: 150px;
+    width: 125px;
+    height: 90px;
   }
 
   .portfolio__content {
@@ -1236,6 +1238,7 @@ footer .footer__social a:hover {
 
   .home__social {
     transform: translateX(-6rem);
+    display: none;
   }
 
   .services__container {
