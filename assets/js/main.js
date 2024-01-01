@@ -32,6 +32,7 @@ const skillsContent = document.getElementsByClassName('skills__content'),
     skillsHeader = document.querySelectorAll('.skills__header')
 
 function toggleSkills() {
+    console.log("skills click")
     let itemClass = this.parentNode.className
 
     for (i = 0; i < skillsContent.length; i++) {
@@ -46,6 +47,26 @@ skillsHeader.forEach((el) => {
     el.addEventListener('click', toggleSkills)
 })
 
+
+/*==================== ACCORDION PUBLICATIONS ====================*/
+const publicationsContent = document.getElementsByClassName('publications__content'),
+    publicationsHeader = document.querySelectorAll('.publications__header')
+
+function togglePublications() {
+    console.log("pub click")
+    let itemClasss = this.parentNode.className
+
+    for (i = 0; i < publicationsContent.length; i++) {
+        publicationsContent[i].className = 'publications__content publications__close'
+    }
+    if (itemClasss === 'publications__content publications__close') {
+        this.parentNode.className = 'publications__content publications__open'
+    }
+}
+
+publicationsHeader.forEach((el) => {
+    el.addEventListener('click', togglePublications)
+})
 /*==================== QUALIFICATION TABS ====================*/
 
 
@@ -172,3 +193,5 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+

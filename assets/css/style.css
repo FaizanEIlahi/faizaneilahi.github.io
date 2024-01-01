@@ -574,6 +574,131 @@ img {
   transform: rotate(-180deg);
 }
 
+/*==================== PUBLICATIONS ====================*/
+.publications__container {
+  row-gap: 0;
+}
+
+.publications__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+}
+
+.publications__icon,
+.publications__arrow {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.publications__icon {
+  margin-right: var(--mb-0-75);
+}
+
+.publications__title {
+  font-size: var(--h3-font-size);
+}
+
+.publications__subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.publications__arrow {
+  margin-left: auto;
+  transition: .4s;
+}
+
+.publications__list {
+  row-gap: 1.5rem;
+  padding-left: 2.7rem;
+}
+
+.publications__titles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-5);
+}
+
+.publications__name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+
+.publications__bar,
+.publications__percentage {
+  height: 5px;
+  border-radius: .25rem;
+}
+
+.publications__bar {
+  background-color: var(--first-color-lighter);
+}
+
+.publications__percentage {
+  display: block;
+  background-color: var(--first-color);
+}
+
+.publications__html {
+  width: 90%;
+}
+
+.publications__css {
+  width: 70%;
+}
+
+.publications__js {
+  width: 60%;
+}
+
+.publications__react {
+  width: 40%;
+}
+
+.publications__php {
+  width: 90%;
+}
+
+.publications__mysql {
+  width: 72%;
+}
+
+.publications__node {
+  width: 58%;
+}
+
+.publications__python {
+  width: 94%;
+}
+
+.publications__blender {
+  width: 50%;
+}
+
+.publications__photoshop {
+  width: 42%;
+}
+
+.publications__adobeillustrator {
+  width: 62%;
+}
+
+.publications__close .publications__list {
+  height: 0;
+  overflow: hidden;
+}
+
+.publications__open .publications__list {
+  height: max-content;
+  margin-bottom: var(--mb-2-5);
+}
+
+.publications__open .publications__arrow {
+  transform: rotate(-180deg);
+}
 /*==================== QUALIFICATION ====================*/
 
 
@@ -1500,3 +1625,5 @@ footer .footer__social a:hover {
     flex: 0 1 calc(100% - 20px);
   }
 }
+
+
